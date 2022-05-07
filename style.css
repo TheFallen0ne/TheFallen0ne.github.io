@@ -289,8 +289,8 @@ a:active{
     background-position: center;
     background-size: cover;
     text-align: center;
-    min-height: 85vh;
     padding: 2% 6%;
+
 }
 
 .arak h2{
@@ -342,16 +342,18 @@ a:active{
     border: 0.1rem solid #5927E5;
 }
 
-.arsor{
+.arsor:first-of-type{
     display: flex;
     margin-left:-5px;
     margin-right:-5px;
+    padding-bottom: 3rem;
 }
 
 .aroszlop{
     flex: 50%;
     float:left;
     padding: 5px;
+    padding-bottom: 4rem;
 }
 
 /* Clearfix (clear floats) */
@@ -367,6 +369,7 @@ a:active{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
 }
 
 .ar-gomb{
@@ -375,6 +378,7 @@ a:active{
     border: 0.3rem solid #5927E5;
     color: #5927E5;
     margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
     cursor: pointer;
     border-radius: 0.5rem;
     font-size: 1.5rem;
@@ -508,6 +512,7 @@ a:active{
     border: 0.3rem solid #5927E5;
     color: #5927E5;
     margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
     cursor: pointer;
     border-radius: 0.5rem;
     font-size: 1.5rem;
@@ -819,10 +824,7 @@ input[type="checkbox"] + label, input[type="radio"] + label{
     .urlap form fieldset{
         width: 100%;
     }
-    .arak{
 
-        min-height: 195vh; 
-    }
 
 }
 
