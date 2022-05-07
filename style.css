@@ -33,15 +33,15 @@ header{
 
 }
 #home{
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(kepek/tennis_court.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(kepek/tennis_court.jpg);
     clip-path: polygon(50% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
 
 }
 #palyaberles{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.47)), url(kepek/blue-court.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(kepek/blue-court.jpg);
 }
 #oktatas{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(kepek/blue-court.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(kepek/blue-court.jpg);
     background-attachment: scroll;
 }
 #kapcsolat{
@@ -289,7 +289,7 @@ a:active{
     background-position: center;
     background-size: cover;
     text-align: center;
-    min-height: 100vh;
+    min-height: 85vh;
     padding: 2% 6%;
 }
 
@@ -325,7 +325,7 @@ a:active{
 }
 
 
-.arak .artabla h2{
+.arak .artabla h3{
     text-align: left;
     color:#5927E5;
     font-size: 3rem;
@@ -812,15 +812,17 @@ input[type="checkbox"] + label, input[type="radio"] + label{
         padding-bottom: 10rem;
     }
 
-     .urlap form legend{
+    .urlap form legend{
         font-size: 1.75rem;
     }
 
     .urlap form fieldset{
         width: 100%;
     }
+    .arak{
 
-
+        min-height: 195vh; 
+    }
 
 }
 

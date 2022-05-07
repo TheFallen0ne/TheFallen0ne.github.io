@@ -280,7 +280,7 @@ a:active{
     background-position: center;
     background-size: cover;
     text-align: center;
-    min-height: 100vh;
+    min-height: 85vh;
     padding: 2% 6%;
 }
 
@@ -316,7 +316,7 @@ a:active{
 }
 
 
-.arak .artabla h2{
+.arak .artabla h3{
     text-align: left;
     color:black;
     font-size: 3rem;
@@ -408,13 +408,11 @@ a:active{
     flex: 1 1 20rem;
     padding: 2rem;
     max-width: 65%;
-    filter: brightness(10%);
 }
 
 .edzoink .edzo .image img{
     border-radius: .6rem;
     object-fit: cover;
-    filter: brightness(10%);
 }
 
 .edzoink .edzo .content{
@@ -812,15 +810,17 @@ input[type="checkbox"] + label, input[type="radio"] + label{
         padding-bottom: 10rem;
     }
 
-     .urlap form legend{
+    .urlap form legend{
         font-size: 1.75rem;
     }
 
     .urlap form fieldset{
         width: 100%;
     }
+    .arak{
 
-
+        min-height: 195vh; 
+    }
 
 }
 
