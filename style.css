@@ -825,6 +825,9 @@ input[type="checkbox"] + label, input[type="radio"] + label{
         width: 100%;
     }
 
+    .slide{
+        display: none;
+    }
 
 }
 
