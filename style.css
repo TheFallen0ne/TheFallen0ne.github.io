@@ -1,0 +1,850 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    outline: none;
+
+}
+*::selection{
+    background-color: black;
+    color: white;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    background-color: #fffbce25;
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+#home{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(kepek/tennis_court.jpg);
+    clip-path: polygon(50% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
+
+}
+#palyaberles{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.47)), url(kepek/blue-court.jpg);
+}
+#oktatas{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(kepek/blue-court.jpg);
+    background-attachment: scroll;
+}
+#kapcsolat{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(kepek/blue-court.jpg);
+}
+#message{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(kepek/red-court1.jpg);
+    background-position: center center;
+}
+
+
+
+/* Navbar */
+
+nav{
+    padding: 1% 6%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+nav .logo{
+    /* font-size: 3rem; */
+    cursor: pointer;
+    /* color: #CCFF00; */
+}
+nav .logo img{
+    max-width: 125px;
+    height: auto;
+}
+
+nav .links{
+    padding-left: 0;
+    text-transform: capitalize;
+}
+
+nav .links li{
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+nav .links li a{
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem;
+}
+.links .active{
+    color: #CCFF00;
+}
+
+nav .links li a:hover{
+    color: #CCFF00;
+}
+
+#home .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#oktatas .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#palyaberles .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#kapcsolat .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#message .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header .content h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.gomb{
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 0.3rem solid #CCFF00;
+    color: #CCFF00;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.gomb:hover{
+    background-color: #CCFF00;
+    color: black;
+}
+
+nav .open, .close{
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #CCFF00;
+    display: none;
+}
+
+
+
+/* Welcome */
+
+.welcome .row{
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 10%;
+    text-align: center;
+}
+
+.welcome .row .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+/* .welcome .row .content h1{
+    font-size: 3rem;
+    color: #5927E5;
+    margin-bottom: 2rem;
+} */
+
+.welcome .row .content h2{
+    font-size: 3.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: #5927E5;
+    border-bottom: .3rem solid #5927E5;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+.welcome .row .content p{
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+/* no youtube */
+.welcome .row .video{
+    position: relative;
+    padding-bottom: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.welcome .row .video video{
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+/* Leírás */
+
+.leiras{
+    width:100%;
+    text-align: center;
+}
+
+.leiras h1{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: 0.5rem;
+    border-bottom: .3rem solid #5927E5;
+    font-size: 3.5rem;
+    display: inline-block;
+    color: #5927E5;
+}
+
+.leiras p{
+    text-align: left;
+    padding: 0.5% 20%;
+    font-size: 1.5rem;
+}
+
+#leiro-link{
+    padding-bottom: 5rem;
+}
+
+#leiro-link:link{
+    color:blue;
+    font-size: 1.3rem;
+}
+
+a:hover{
+    color: black;
+}
+
+a:visited{
+    color: red;
+}
+
+a:active{
+    color: orange;
+}
+
+
+
+/* Carousel */
+
+.carousel-item{
+    height:40rem;
+    background: #777;
+}
+
+
+
+/* Arak */
+
+.arak{
+    /* width: 100%; */
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 100vh;
+    padding: 2% 6%;
+}
+
+.arak h2{
+    font-size: 3.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: #5927E5;
+    border-bottom: .3rem solid #5927E5;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.arak .artabla{
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    margin-top: 2rem;
+    color: black;
+    border: 0.2rem solid #5927E5;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    font-size: 1.55rem;
+}
+
+
+.arak .artabla caption{
+    text-align: left;
+    caption-side: top;
+    color: black;
+    font-size: 1.05rem;
+}
+
+
+.arak .artabla h2{
+    text-align: left;
+    color:#5927E5;
+    font-size: 3rem;
+}
+
+.arak .artabla th{
+    border-right: 0.1rem solid #5927E5;
+    border-bottom: 0.2rem solid #5927E5;
+}
+
+.arak .artabla tr td{
+    text-align: center;
+    padding: 1rem;
+    border: 0.1rem solid #5927E5;
+}
+
+.arsor{
+    display: flex;
+    margin-left:-5px;
+    margin-right:-5px;
+}
+
+.aroszlop{
+    flex: 50%;
+    float:left;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.arsor::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.ar-gomb{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ar-gomb{
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 0.3rem solid #5927E5;
+    color: #5927E5;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.ar-gomb:hover{
+    background-color: #5927E5;
+    color: white;
+}
+
+
+/* Edzok */
+
+.edzoink{
+    min-height: 100vh;
+    text-align: center;
+    padding: 2% 6%;
+}
+
+.edzoink h2{
+    font-size: 3.8rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: #5927E5;
+    border-bottom: .3rem solid #5927E5;
+    margin-bottom: 1.8rem;
+}
+
+.edzoink .edzo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 6%;
+}
+
+.edzoink .edzo .image{
+    flex: 1 1 20rem;
+    padding: 2rem;
+    max-width: 100%;
+}
+
+.edzoink .edzo .image img{
+    border-radius: .6rem;
+    object-fit: cover;
+}
+
+.edzoink .edzo .content{
+    flex: 1 1 20rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+.edzoink .edzo .content h2{
+    font-size: 3rem;
+    color: #5927E5;
+    margin-bottom: 2rem;
+}
+
+.edzoink .edzo .content p{
+    line-height: 1.7;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.edzoink .edzo .inner{
+    position: relative;
+    z-index: 9999;
+    padding: 0 1rem;
+}
+
+.edzoink .edzo .inner .info{
+    background-color: #CCFF00;
+    padding: 1.2rem 1rem;
+    border-radius: 0.6rem;
+    margin-top: -1.5rem;
+    text-align: center;
+
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edzoink .edzo .image:hover img{
+    filter: brightness(70%);
+    transform: scale(1.05);
+}
+
+.edzoink .edzo .image:hover .inner{
+    transform: translateY(-30px);
+}
+
+.edzoink .edzo .inner .info h4{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    color: black;
+}
+
+.edzoink .edzo .inner .info p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    margin-top: .6rem;
+}
+
+.edzoink .edzo .inner .info .links{
+    margin-top: 1rem;
+}
+
+.edzoink .edzo .inner .info .links a{
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    color: #CCFF00;
+    text-align: center;
+    line-height: 2rem;
+    margin-left: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.edzoink .edzo .inner .info .links a:hover{
+    box-shadow: 0 0 .6rem black;
+}
+
+.foglalas-gomb{
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 0.3rem solid #5927E5;
+    color: #5927E5;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.foglalas-gomb:hover{
+    background-color: #5927E5;
+    color: white;
+}
+
+
+
+/* Kapcsolat */
+
+.rolunk{
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    min-height: 62vh;
+    padding: 2% 6%;
+}
+
+.rolunk h2{
+    font-size: 3.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: #5927E5;
+    border-bottom: .3rem solid #5927E5;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.rolunk .container{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.rolunk .container .row{
+    width: 100%;
+    background: transparent;
+    padding: 1%;
+    color:#5927E5;
+    font-size: 2rem;
+
+}
+
+.rolunk i{
+    margin-right: 60px;
+}
+
+.rolunk p{
+    font-size: 1.5rem;
+    color: black;
+    text-align: left;
+    margin-left: 0px;
+}
+
+
+
+/* Urlap */
+
+.urlap-gomb{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.urlap-gomb{
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 0.3rem solid #5927E5;
+    color: #5927E5;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.urlap-gomb:hover{
+    background-color: #5927E5;
+    color: white;
+}
+
+.urlap{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    background-color: black;
+    min-height: 101vh;
+}
+
+.urlap h2{
+
+    font-size: 3.5rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: #CCFF00;
+    border-bottom: .3rem solid #CCFF00;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.urlap form{
+    padding: 2% 6%;
+    margin: 0 auto;
+    color: white;
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.urlap form legend{
+    font-size: 1.25rem;
+    padding: 0 .25rem;
+}
+
+.urlap form label{
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.urlap form .checks label{
+    margin-bottom: 0;
+}
+
+.urlap form label:first-of-type{
+    margin-bottom: 0;
+}
+.urlap form label:last-of-type{
+    margin-top: 1rem;
+}
+
+.urlap form .szoveg input{
+    padding: .5rem;
+    border: 0.1rem solid #ddd;
+    background-color: transparent;
+    color: white;
+}
+
+.urlap form input[type="submit"]{
+    padding: 0.5rem 2.5rem;
+    background-color: transparent;
+    border: 0.3rem solid #CCFF00;
+}
+
+.urlap form input[type="reset"]{
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 0.2rem solid #ff1e00;
+    color: #ff1e00;
+    margin-left: 4rem;
+}
+
+.urlap form input[type="text"]::placeholder{
+    color: #808080;
+}
+.urlap form input[type="email"]::placeholder{
+    color: #808080;
+}
+.urlap form input[type="tel"]::placeholder{
+    color: #808080;
+}
+
+.urlap form input[type="submit"]:hover{
+    background-color: #CCFF00;
+    color: black;
+}
+
+.urlap form input[type="reset"]:hover{
+    background-color: #ff1e00;
+    color: black;
+}
+
+/* .urlap form input[type="reset"]{
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 0.3rem solid #CCFF00;
+}
+
+.urlap form input[type="reset"]:hover{
+    background-color: #CCFF00;
+    color: black;
+} */
+
+.urlap form input[type="text"], input[type="email"]{
+    width: 20rem;
+}
+
+.urlap form textarea{
+    height: 15rem;
+    width: 100%;
+    background-color: transparent;
+    color: #ddd;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+.urlap form .szoveg input:focus{
+    border: 1px solid #CCFF00;
+}
+
+.urlap form textarea:focus{
+    border: 1px solid #CCFF00;
+}
+
+.urlap form .checks{
+    margin-top: 1rem;
+}
+
+.urlap form .checks:last-of-type{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label{
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.urlap form input[type="radio"]{
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+.urlap form input[type="radio"]:first-of-type{
+    margin-left: 0;
+}
+
+
+
+
+/* Mobile, tablet, laptop */
+
+@media (max-width: 850px){
+    header .content h1{
+        font-size: 2.75rem;
+    }
+    nav .links{
+        height: 25rem;
+        width: 60%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        border-radius: 1.2rem;
+        background-color: rgba(0,0,0,0.93);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 9999;
+    }
+    nav .links li{
+        font-size: 1.8rem;
+        margin: 0.5rem;
+    }
+    nav .links li a{
+        color: white;
+    }
+    nav .open, nav .links .close{
+        display: block;
+        position: absolute;
+        top: 1.8rem;
+        right: 1.8rem;
+    }
+
+    .edzoink .edzo{
+        margin-bottom: 5rem;
+    }
+    .edzoink .edzo .image{
+        flex: 1 1 40rem;
+        padding: .5rem;
+    }
+
+    .edzoink .edzo .content{
+        flex: 1 1 40rem;
+        padding: .5rem;
+    }
+    .edzoink .edzo .content .gomb{
+        margin-top: .5rem;
+    }
+
+    .edzoink .edzo .image img{
+        width: 100%;
+        height: 100%;
+        /* border-radius: .6rem;
+        object-fit: cover; */
+    }
+
+    .welcome .row .video video{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    #leiro-link{
+        padding-bottom: 10rem;
+    }
+
+     .urlap form legend{
+        font-size: 1.75rem;
+    }
+
+    .urlap form fieldset{
+        width: 100%;
+    }
+
+
+
+}
+
+@media (max-width: 767px){
+    .table{
+        margin-top: 1rem;
+    }
+    #message{
+        min-height: 120vh;
+    }
+}
+
+@media (max-width:1100px) {
+
+}
+
+
+
+/* Footer */
+
+footer{
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    background-color: #333;
+    font-size: 1.8rem;
+}
